@@ -1,0 +1,46 @@
+/* Scss Document */
+/* CSS Document */
+/*------------------------------mixin bg------------------------------*/
+/*------------------------------mixin flex------------------------------*/
+.head_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background: #8CABD8;
+}
+@media only screen and (min-width: 700px) {
+  .head_wrap {
+    width: 390px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.head_wrap .left_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.head_wrap .left_wrap figure {
+  width: 0.8rem;
+}
+.head_wrap .left_wrap .name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.head_wrap .right_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.head_wrap .right_wrap figure {
+  width: 1.5rem;
+}/*# sourceMappingURL=head.css.map */

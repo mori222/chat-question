@@ -1,0 +1,30 @@
+/* Scss Document */
+/* CSS Document */
+/*------------------------------mixin bg------------------------------*/
+/*------------------------------mixin flex------------------------------*/
+.result_wrap .bot_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  margin-top: 2rem;
+  animation: fadeIn 0.5s ease-out;
+}
+.result_wrap .bot_wrap figure {
+  width: 4rem;
+}
+.result_wrap .bot_wrap .bot_content .question {
+  font-size: 1.4rem;
+  line-height: 1;
+  background: #fff;
+  padding: 1rem 2rem;
+  max-width: 70%;
+  border-radius: 1rem;
+  line-height: 1.3;
+}
+.result_wrap .bot_wrap .bot_content .result_bnr {
+  margin-top: 2rem;
+  width: 70%;
+}/*# sourceMappingURL=result.css.map */

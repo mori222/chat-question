@@ -1,0 +1,41 @@
+/* Scss Document */
+
+@charset "UTF-8";
+
+/* CSS Document */
+@import "_variables.scss";
+
+.head_wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    @include flex;
+    justify-content: space-between;
+    background: #8CABD8;
+    @include pc{
+        width: 390px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .left_wrap{
+        @include flex;
+        gap: 1rem;
+        figure{
+            width: 0.8rem;
+        }
+        .name{
+            font-size: 1.4rem;
+            font-weight: bold;
+            line-height: 1;
+        }
+    }
+    .right_wrap{
+        @include flex;
+        gap: 1rem;
+        figure{
+            width: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+/* Scss Document */
+
+@charset "UTF-8";
+
+@import "_variables.scss";
+
+.result_wrap{
+    .bot_wrap{
+        @include flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0.8rem;
+        margin-top: 2rem;
+        animation: fadeIn 0.5s ease-out;
+        figure{
+            width: 4rem;
+        }
+        .bot_content{
+            .question{
+                font-size: 1.4rem;
+                line-height: 1;
+                background: #fff;
+                padding: 1rem 2rem;
+                max-width: 70%;
+                border-radius: 1rem;
+                line-height: 1.3;
+            }
+            .result_bnr{
+                margin-top: 2rem;
+                width: 70%;
+            }
+        }
+    }
+}
