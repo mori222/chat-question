@@ -31,11 +31,4 @@
             line-height: 1;
         }
     }
-    .right_wrap{
-        @include flex;
-        gap: 1rem;
-        figure{
-            width: 1.5rem;
-        }
-    }
 }

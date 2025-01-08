@@ -5,12 +5,24 @@ const InputField = ({
     previousQuestions, 
     selectedOptions 
 }: { 
-    question: { question: string, options: string[] }, 
+    question: { 
+        id: number,
+        question: string, 
+        options?: string[],
+        type?: string 
+    }, 
     selectedOption: string, 
     handleOptionChange: (option: string) => void, 
-    previousQuestions: { question: string, options: string[] }[], 
+    previousQuestions: {
+        id: number,
+        question: string,
+        options?: string[],
+        type?: string
+    }[], 
     selectedOptions: string[] 
 }) => {
+    const options = question?.options || [];
+    
     return (
         <div className="input_field">
             {/* 過去の質問をすべて表示 */}
@@ -40,10 +52,10 @@ const InputField = ({
                 <figure>
                     <img src="/images/bot_icon.svg" alt="ボット" />
                 </figure>
-                <p className='question'>{question.question}</p>
+                <p className='question'>{question?.question}</p>
             </div>
             <div className="option_wrap">
-                {question.options.map((option) => (
+                {options.map((option) => (
                     <div key={option} className='button'>
                         <input
                             type="radio"
